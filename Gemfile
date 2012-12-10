@@ -3,10 +3,10 @@ source 'http://rubygems.org'
 gem 'rails', '3.2.8'
 
 gem 'jquery-rails',             '~> 2.0.2'
-gem 'pg',                       '~> 0.14.0'
 gem 'pry',                      '~> 0.9.10'
 gem 'rdiscount',                '~> 1.6.8'
 gem 'simple_form',              '~> 2.0.2'
+gem 'sqlite3',                  '~> 1.3.6'
 gem 'strong_parameters',        '~> 0.1.4'
 
 # Assets
@@ -31,6 +31,7 @@ end
 
 # Production Gems
 group :production do
+  gem 'pg',                     '~> 0.14.0'
   gem 'rack-ssl',               '~> 1.3.2'
   gem 'rack-canonical-host',    '~> 0.0.8'
   gem 'thin',                   '~> 1.4.1'
