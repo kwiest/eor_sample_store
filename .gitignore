@@ -13,3 +13,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore OSX files and config files.
+.DS_Store
+.powenv
+.powrc
+
+# Ignore bundled gems
+vendor/bundle
