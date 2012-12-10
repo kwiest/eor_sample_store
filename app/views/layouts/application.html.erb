@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EorSampleStore</title>
+  <title>eCommerce on Rails Sample Store</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <header>
+    eCommerce on Rails Sample Store
+
+    <nav>
+      <%= link_to 'Shopping Cart (0)', '#', id: 'cart' %>
+    </nav>
+  </header>
+
+  <%= yield %>
 
 </body>
 </html>
