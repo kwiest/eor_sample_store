@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121210181145) do
+ActiveRecord::Schema.define(:version => 20121210232741) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20121210181145) do
     t.string   "base_price_currency", :default => "USD"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "image_url"
   end
 
 end

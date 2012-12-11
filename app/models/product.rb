@@ -1,4 +1,6 @@
 class Product < ActiveRecord::Base
+  include ActiveModel::ForbiddenAttributesProtection
+
   validates_presence_of :name
 
   composed_of :base_price,

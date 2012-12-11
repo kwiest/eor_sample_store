@@ -8,10 +8,11 @@
 </head>
 <body>
 
-  <header>
+  <header id="main-header">
     eCommerce on Rails Sample Store
 
     <nav>
+      <%= link_to 'All products', products_path %>
       <%= link_to 'Shopping Cart (0)', '#', id: 'cart' %>
     </nav>
   </header>

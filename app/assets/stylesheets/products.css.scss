@@ -1,0 +1,23 @@
+section#products {
+  article.product {
+    float: left;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    min-height: 300px;
+
+    img {
+      max-width: 200px;
+      max-height: 150px;
+    }
+  }
+}
+
+div#product {
+  img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}

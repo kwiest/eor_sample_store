@@ -1,4 +1,6 @@
-<%= content_for :article, product do %>
-  <div class="name"><%= product.name %></div>
-  <div class="description"><%= product.description %></div>
+<%= content_tag_for :article, product do %>
+  <h3><%= product.name %></h3>
+  <%= image_for product %>
+  <div class="price">Base price: <%= product.base_price.format %></div>
+  <%= link_to 'Details', product %>
 <% end %>

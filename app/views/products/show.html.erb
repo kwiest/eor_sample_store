@@ -1,0 +1,10 @@
+<div id="product">
+  <h1><%= @product.name %></h1>
+
+  <%= description_for @product %>
+  <aside><%= image_for @product %></aside>
+
+  Base price: <%= @product.base_price.format %>
+
+  <div class="add-to-cart"><%= link_to 'Add to shopping cart' %></div>
+</div>
