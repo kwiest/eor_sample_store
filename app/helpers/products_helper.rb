@@ -6,7 +6,7 @@ module ProductsHelper
   end
 
   def image_for(product)
-    if product.image_url.empty?
+    if product.image_url.nil? || product.image_url.empty?
       image_tag 'https://s3-us-west-2.amazonaws.com/ecommerceonrails/images/default-product.jpg'
     else
       image_tag product.image_url
