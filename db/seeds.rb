@@ -5,3 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+products = Product.create [
+  {
+    name: 'Cervelo R3 Bicycle',
+    description: %s{The R3 features BBright™ and the same exclusive second generation Squoval™ tube shapes as our R5, to combine all the benefits of a stiff and light bicycle with the strength and comfort needed to win on the cobbles of the roughest roads in Europe. Built on the lessons learned at Project California, its renowned comfort comes from using ultra-thin seat stays along with an optimized 1 3/8”steerer tube. Stiff, light and comfortable, this bike provides the responsiveness and the confidence needed when descending, cornering, racing for the win, or just sheer pleasure during your Sunday ride.},
+    base_price_cents: 300000,
+    image_url: 'https://s3-us-west-2.amazonaws.com/ecommerceonrails/images/cervelo-r3.jpg'
+  },
+  {
+    name: 'Team Garmin Barracuda Cycling Jersey',
+    description: %s{This season's new Garmin Barracuda Team jersey highlights the Argyle, and a more blue color scheme, on the pro team kit. We look forward to the season ahead, and are sure that the boys will stand out, as they always do!\r\n\r\n* Prosecco Strada fabric for breathability and comfort.\r\n* Mesh side panels for further cooling and breathability.\r\n* Anatomic form-fit, cut to fit the rider in the cycling position.\r\n* Silicone gripper elastic at the waist.\r\n* 3 rear pockets.\r\n\r\n_Castelli cycling apparel is designed to hug all the curves of your body; we recommend ordering a size larger than you typically would for an American-sized cut.},
+    base_price_cents: 7499,
+    image_url: 'https://s3-us-west-2.amazonaws.com/ecommerceonrails/images/garmin-jersey.jpg'
+  },
+  {
+    name: 'Castelli Bib Shorts',
+    description: %s{Castelli's mid-level bibshort will still have you streets ahead of the competition's more expensive offerings. This short is just as good as it looks - and a super bargain at this mid-range price. The 10-panel construction provides an exceptional fit and unsurpassed level of comfort. Castelli's proven Kiss3 seatpad will provide hour after hour of in-the-saddle comfort and the racey go-fast look is sure to impress. The Affinity lycra used has excellent stretch and recovery, is super-soft against the skin and has a smooth semi-matt finish. New Giro3 leg band elastic provides grip without excessive binding. Look fast, feel fast and you will go faster. So will these great shorts, so don't delay - grab yourself a pair today!\r\n\r\n* 10-panel construction provides exceptional fit and comfort.\r\n* Highly stretchable and durable Affinity Lycra 210g fabric throughout the short.\r\n* Mesh upper bib.\r\n* Kiss 3 Chamois seat pad.\r\n* Color-match Giro3 leg band elastic grippers.\r\n* 2 rear reflective bands at the leg grippers.},
+    base_price_cents: 12999,
+    image_url: 'https://s3-us-west-2.amazonaws.com/ecommerceonrails/images/castelli-bib-shorts.jpg'
+  }
+]
