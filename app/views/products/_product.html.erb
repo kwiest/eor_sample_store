@@ -1,6 +1,8 @@
 <%= content_tag_for :article, product do %>
   <h3><%= product.name %></h3>
   <%= image_for product %>
-  <div class="price">Base price: <%= product.base_price.format %></div>
+  <div class="price">
+    Base price: <%= number_to_currency product.base_price %>
+  </div>
   <%= link_to 'Details', product %>
 <% end %>

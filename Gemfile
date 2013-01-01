@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 gem 'rails', '3.2.8'
 
 gem 'jquery-rails',             '~> 2.0.2'
-gem 'money',                    '~> 5.1.0'
 gem 'pry',                      '~> 0.9.10'
 gem 'rdiscount',                '~> 1.6.8'
 gem 'simple_form',              '~> 2.0.2'
