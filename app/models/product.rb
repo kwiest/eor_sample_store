@@ -1,6 +1,8 @@
 class Product < ActiveRecord::Base
   include ActiveModel::ForbiddenAttributesProtection
 
+  has_many :line_items
+
   validates :name, presence: true
   validates :base_price_cents, presence: true, numericality: true
 

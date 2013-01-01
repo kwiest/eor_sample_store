@@ -1,0 +1,11 @@
+bike:
+  name: Cervelo R3
+  base_price_cents: 300000
+  base_price_currency: 'USD'
+  description: A really sweet bike.
+
+jersey:
+  name: Castelli Jersey
+  base_price_cents: 7499
+  base_price_currency: 'USD'
+  description: High quality jersey.
