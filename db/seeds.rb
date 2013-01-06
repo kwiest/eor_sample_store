@@ -9,7 +9,7 @@
 products = Product.create [
   {
     name: 'Cervelo R3 Bicycle',
-    description: %s{The R3 features BBright™ and the same exclusive second generation Squoval™ tube shapes as our R5, to combine all the benefits of a stiff and light bicycle with the strength and comfort needed to win on the cobbles of the roughest roads in Europe. Built on the lessons learned at Project California, its renowned comfort comes from using ultra-thin seat stays along with an optimized 1 3/8”steerer tube. Stiff, light and comfortable, this bike provides the responsiveness and the confidence needed when descending, cornering, racing for the win, or just sheer pleasure during your Sunday ride.},
+    description: %s{The R3 features BBright and the same exclusive second generation Squoval tube shapes as our R5, to combine all the benefits of a stiff and light bicycle with the strength and comfort needed to win on the cobbles of the roughest roads in Europe. Built on the lessons learned at Project California, its renowned comfort comes from using ultra-thin seat stays along with an optimized 1 3/8" steerer tube. Stiff, light and comfortable, this bike provides the responsiveness and the confidence needed when descending, cornering, racing for the win, or just sheer pleasure during your Sunday ride.},
     base_price_cents: 300000,
     image_url: 'https://s3-us-west-2.amazonaws.com/ecommerceonrails/images/cervelo-r3.jpg'
   },

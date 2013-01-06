@@ -1,13 +1,20 @@
-class LineItem < ActiveRecord::Base
-  belongs_to :order
-  belongs_to :product
+class LineItem
+  attr_reader :product_id, :quantity
+
+  def initialize(product_id)
+    @product_id = product_id
+    @quantity = 1
+  end
+
+  def product
+    @product ||= Product.find @product_id
+  end
 
   def increment_quantity!
-    self.quantity += 1
-    save!
+    @quantity += 1
   end
 
   def total_price
-    product.base_price * quantity
+    product.base_price * @quantity
   end
 end
