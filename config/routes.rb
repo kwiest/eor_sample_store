@@ -1,6 +1,9 @@
 EorSampleStore::Application.routes.draw do
   resources :products
 
+  match '/shopping_cart'              => 'shopping_cart#show',     :via => :get
+  match '/shopping_cart/add_item/:id' => 'shopping_cart#add_item', :via => :post
+
   root to: 'products#index'
 
   # The priority is based upon order of creation:
