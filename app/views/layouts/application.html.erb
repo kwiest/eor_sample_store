@@ -13,7 +13,7 @@
 
     <nav>
       <%= link_to 'All products', products_path %>
-      <%= link_to 'Shopping Cart (0)', '#', id: 'cart' %>
+      <%= link_to "Shopping Cart (#{current_cart.size})", '#', id: 'cart' %>
     </nav>
   </header>
 

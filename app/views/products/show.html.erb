@@ -6,5 +6,7 @@
 
   Base price: <%= number_to_currency @product.base_price %>
 
-  <div class="add-to-cart"><%= link_to 'Add to shopping cart' %></div>
+  <div class="add-to-cart">
+    <%= button_to 'Add to shopping cart', "/shopping_cart/add_item/#{@product.id}" %>
+  </div>
 </div>
