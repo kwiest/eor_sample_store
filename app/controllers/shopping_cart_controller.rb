@@ -6,6 +6,6 @@ class ShoppingCartController < ApplicationController
   def add_item
     product = Product.find params[:id]
     current_cart.add_item product
-    redirect_to root_path, notice: 'Cart updated!'
+    redirect_to shopping_cart_path, notice: 'Cart updated!'
   end
 end
