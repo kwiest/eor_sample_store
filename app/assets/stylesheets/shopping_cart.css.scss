@@ -1,0 +1,40 @@
+table#shopping_cart {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  th {
+    &#product {
+      text-align: left;
+    }
+
+    &#quantity {
+      text-align: center;
+    }
+
+    &#price {
+      text-align: right;
+    }
+  }
+
+  tr.line_item {
+    td {
+      padding: 4px;
+      border: 1px solid #d2d2d2;
+
+      &.quantity {
+        text-align: center;
+      }
+      
+      &.price {
+        text-align: right;
+      }
+    }
+  }
+
+  tr td#cart-price {
+    text-align: right;
+    font-style: italic;
+  }
+}

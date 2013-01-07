@@ -17,4 +17,8 @@ class LineItem
   def total_price
     product.base_price * @quantity
   end
+
+  def to_partial_path
+    '/line_items/line_item'
+  end
 end
