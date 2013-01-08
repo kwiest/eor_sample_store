@@ -36,4 +36,16 @@ class ShoppingCartTest < ActiveSupport::TestCase
 
     assert_equal 5, @cart.size
   end
+
+  test 'removing an item from the cart' do
+    @cart.add_item @bike
+    @cart.remove_item @bike
+
+    refute @cart.products.include? @bike
+    assert_equal 0, @cart.size
+  end
+
+  test 'removing an item that is not in the cart' do
+    refute @cart.remove_item @jersey
+  end
 end

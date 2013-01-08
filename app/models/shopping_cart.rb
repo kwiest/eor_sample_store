@@ -14,6 +14,13 @@ class ShoppingCart
     end
   end
 
+  def remove_item(product)
+    return false unless products.include? product
+
+    line_item = @line_items.detect { |li| li.product == product }
+    @line_items.delete line_item
+  end
+
   def products
     @line_items.map &:product
   end
