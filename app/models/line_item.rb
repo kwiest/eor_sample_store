@@ -1,13 +1,9 @@
 class LineItem
-  attr_reader :product_id, :quantity
+  attr_reader :product, :quantity
 
-  def initialize(product_id)
-    @product_id = product_id
+  def initialize(product)
+    @product  = product
     @quantity = 1
-  end
-
-  def product
-    @product ||= Product.find @product_id
   end
 
   def increment_quantity!
@@ -15,7 +11,7 @@ class LineItem
   end
 
   def total_price
-    product.base_price * @quantity
+    @product.base_price * @quantity
   end
 
   def to_partial_path

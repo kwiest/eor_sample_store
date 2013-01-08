@@ -3,7 +3,7 @@ require 'test_helper'
 class LineItemTest < ActiveSupport::TestCase
   setup do
     @bike = products :bike
-    @line_item = LineItem.new @bike.id
+    @line_item = LineItem.new @bike
   end
 
   test 'having a product and quantity' do

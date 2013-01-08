@@ -6,11 +6,11 @@ class ShoppingCart
   end
 
   def add_item(product)
-    line_item = @line_items.detect { |li| li.product_id == product.id }
+    line_item = @line_items.detect { |li| li.product == product }
     if line_item
       line_item.increment_quantity!
     else
-      @line_items << LineItem.new(product.id)
+      @line_items << LineItem.new(product)
     end
   end
 
