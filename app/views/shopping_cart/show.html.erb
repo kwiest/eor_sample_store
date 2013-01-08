@@ -6,13 +6,14 @@
       <th id="product">Product</th>
       <th id="quantity">Quantity</th>
       <th id="price">Price</th>
+      <th id-"action">Action</th>
     </tr>
   </thead>
   <tbody>
     <%= render @shopping_cart.line_items %>
     <tr>
-      <td id="cart-price" colspan="3">
-        <%= number_to_currency @shopping_cart.total_price %>
+      <td id="cart-price" colspan="4">
+        Total: <%= number_to_currency @shopping_cart.total_price %>
       </td>
     </tr>
   </tbody>

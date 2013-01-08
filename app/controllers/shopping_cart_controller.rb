@@ -8,4 +8,10 @@ class ShoppingCartController < ApplicationController
     current_cart.add_item product
     redirect_to shopping_cart_path, notice: 'Cart updated!'
   end
+
+  def remove_item
+    product = Product.find params[:id]
+    current_cart.remove_item product
+    redirect_to shopping_cart_path, notice: 'Cart updated!'
+  end
 end

@@ -8,4 +8,8 @@
   <td class="price">
     <%= number_to_currency line_item.total_price %>
   </td>
+  <td class="action">
+    <%= button_to 'Remove', remove_item_from_shopping_cart_path(line_item.product),
+      method: :delete %>
+  </td>
 </tr>

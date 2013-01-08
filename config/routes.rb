@@ -1,8 +1,9 @@
 EorSampleStore::Application.routes.draw do
   resources :products
 
-  match '/shopping_cart'              => 'shopping_cart#show',     :via => :get,  :as => :shopping_cart
-  match '/shopping_cart/add_item/:id' => 'shopping_cart#add_item', :via => :post, :as => :add_item_to_shopping_cart
+  match '/shopping_cart'                 => 'shopping_cart#show',        :via => :get,    :as => :shopping_cart
+  match '/shopping_cart/add_item/:id'    => 'shopping_cart#add_item',    :via => :post,   :as => :add_item_to_shopping_cart
+  match '/shopping_cart/remove_item/:id' => 'shopping_cart#remove_item', :via => :delete, :as => :remove_item_from_shopping_cart
 
   root to: 'products#index'
 
