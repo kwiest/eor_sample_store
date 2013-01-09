@@ -17,6 +17,6 @@ class ShoppingCartController < ApplicationController
 
   def empty
     current_cart.empty!
-    redirect_to shopping_cart_path, notice: 'Cart updated!'
+    redirect_to products_path, alert: 'Cart emptied!'
   end
 end
