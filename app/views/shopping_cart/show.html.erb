@@ -12,8 +12,11 @@
   <tbody>
     <%= render @shopping_cart.line_items %>
     <tr>
-      <td id="cart-price" colspan="4">
+      <td id="cart-price" colspan="3">
         Total: <%= number_to_currency @shopping_cart.total_price %>
+      </td>
+      <td class="action">
+        <%= link_to 'Check out' %>
       </td>
     </tr>
   </tbody>
