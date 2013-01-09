@@ -48,4 +48,12 @@ class ShoppingCartTest < ActiveSupport::TestCase
   test 'removing an item that is not in the cart' do
     refute @cart.remove_item @jersey
   end
+
+  test 'emptying the cart' do
+    3.times { @cart.add_item @jersey }
+
+    @cart.empty!
+    assert_equal 0, @cart.size
+    assert_equal [], @cart.products
+  end
 end

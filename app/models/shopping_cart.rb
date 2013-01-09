@@ -21,6 +21,10 @@ class ShoppingCart
     @line_items.delete line_item
   end
 
+  def empty!
+    @line_items = []
+  end
+
   def products
     @line_items.map &:product
   end
