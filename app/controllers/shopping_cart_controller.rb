@@ -14,4 +14,9 @@ class ShoppingCartController < ApplicationController
     current_cart.remove_item product
     redirect_to shopping_cart_path, notice: 'Cart updated!'
   end
+
+  def empty
+    current_cart.empty!
+    redirect_to shopping_cart_path, notice: 'Cart updated!'
+  end
 end

@@ -37,4 +37,8 @@ table#shopping_cart {
     text-align: right;
     font-style: italic;
   }
+
+  tr td#empty-cart {
+    text-align: center;
+  }
 }
